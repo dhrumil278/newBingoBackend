@@ -7,7 +7,7 @@ const { Server } = require('socket.io');
 const app = express();
 mongoose.connect(process.env.DB_URL);
 
-const whitelist = ['http://localhost:3000'];
+const whitelist = ['https://dhrumil-bingo.netlify.app/'];
 
 const corsOptions = {
   origin: (origin, callback) => {
